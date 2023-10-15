@@ -1,11 +1,10 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import styles from '../page.module.css'
+import React from 'react'
 
-export default function Home() {
+const Route2 = () => {
   return (
     <main className={styles.main}>
-      <h1>Hello, Home page!</h1>
-
+      <h1>Hello, Route 2!</h1>
       <div className={styles.grid}>
         <a
           href="./route1"
@@ -18,11 +17,11 @@ export default function Home() {
         </a>
 
         <a
-          href="./route2"
+          href="./"
           className={styles.card}
         >
           <h2>
-            Route 2 <span>-&gt;</span>
+            Homepage <span>-&gt;</span>
           </h2>
           <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
         </a>
@@ -30,3 +29,5 @@ export default function Home() {
     </main>
   )
 }
+
+export default Route2
