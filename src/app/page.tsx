@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from './page.module.css'
 
 export default function Home() {
@@ -6,7 +7,7 @@ export default function Home() {
       <h1>Hello, Home page!</h1>
 
       <div className={styles.grid}>
-        <a
+        <Link
           href="./route1"
           className={styles.card}
         >
@@ -14,9 +15,9 @@ export default function Home() {
             Route 1 <span>-&gt;</span>
           </h2>
           <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+        </Link>
 
-        <a
+        <Link
           href="./route2"
           className={styles.card}
         >
@@ -24,7 +25,7 @@ export default function Home() {
             Route 2 <span>-&gt;</span>
           </h2>
           <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+        </Link>
       </div>
     </main>
   )
