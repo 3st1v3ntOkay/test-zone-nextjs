@@ -1,7 +1,11 @@
 import Link from 'next/link'
 import styles from '../../page.module.css'
 
-export default function Page({ params }: { params: { slug: string } }) {
+import {waiting} from 'app/utils'
+
+export default async function Page({ params }: { params: { slug: string } }) {
+  await waiting()
+
   return(
     <main className={styles.main}>
       <h1>Welcome to {params.slug} blog</h1>
