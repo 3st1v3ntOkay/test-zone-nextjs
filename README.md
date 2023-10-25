@@ -1,26 +1,14 @@
-👉🏻 **This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).**
+## Testin Nextjs with Yarn 4
 
-## Getting Started
+👉🏻 **First install yarn 4.0.0 following yarn's team instructions:** [see how to update](https://yarnpkg.com/getting-started/install)
 
-👉🏻 First install your favorite package manager **(yarn  preference)**:
-
+If you have already installed versions up to yarn 1.x, just put this command on your console:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+👉🏻 yarn set version stable
 ```
 
-## Learn More
+## What I am testing
+For now this is what I'm testing, but I could try more things.
 
-👉🏻 To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs)
-- [Learn Next.js](https://nextjs.org/learn)
-- [the Next.js GitHub repository](https://github.com/vercel/next.js/)
-
-## Project status
-👉🏻 Project still under construction ...
+- [ ] Use SWC in nextjs 13
+- [ ] Use yarn 4.0.0 (latest version released)
