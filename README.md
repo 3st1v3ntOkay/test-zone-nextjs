@@ -27,7 +27,7 @@ Docs to understand how pnpm works:
 
 ## Yarn 4.x
 
-After some years using yarn I decided to start using npmn after recomemdations, but you can use yarn if you want.
+After some years using yarn I decided to start using pnpm after recommendations, but you can use yarn if you want.
 
 ```bash
   # second step
