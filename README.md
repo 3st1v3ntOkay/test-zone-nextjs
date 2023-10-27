@@ -21,5 +21,5 @@ First of all, I have been researching how package managers work, specifically Ya
   yarn install
 ```
 
-Yarn docs:
+pnpm docs:
 👉🏻 [Installation](https://yarnpkg.com/getting-started/install)
