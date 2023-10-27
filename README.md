@@ -1,8 +1,8 @@
-# Use Nextjs with Yarn 4.x
+# Nextjs with pnpm 8.10.0
 
-First of all, I have been researching how package managers work, specifically Yarn.  I found that I was using an outdated version of yarn (v1.22.19). Configuring yarn berry (v4.0.0) was a challenging task due to the lack of information and complex documentation. After understanding the issue, a new problem appeared, and now I'm analizing if I should keep using yarn or **jump to pnpm ...**
+Here is a Next.js project managed with pnpm, let's see how useful and good it is **pnpm**.
 
-## Instructions to use this
+## Instructions
 
 ```bash
   # first step
@@ -13,13 +13,14 @@ First of all, I have been researching how package managers work, specifically Ya
   # second step
   corepack enable
 
-  # third step
-  yarn set version berry
-
-  # last step - yarn and yarn install are the same
-  yarn
-  yarn install
+  corepack use pnpm@latest
+  # or
+  corepack use pnpm@<set-version>
+  # corepack use pnpm@8.x
 ```
 
-pnpm docs:
-👉🏻 [Installation](https://yarnpkg.com/getting-started/install)
+Docs to understand what is corepack:
+👉🏻 [Node v20.9.0 - Corepack](https://nodejs.org/dist/latest-v20.x/docs/api/corepack.html)
+
+Docs to understand how pnpm works:
+👉🏻 [pnpm](https://pnpm.io/motivation)
