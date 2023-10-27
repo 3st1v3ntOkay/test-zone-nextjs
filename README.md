@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Nextjs with pnpm 8.10.0
 
-## Getting Started
+Here is a Next.js project managed with pnpm, let's see how useful and good it is **pnpm**.
 
-First, run the development server:
+## Instructions
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  # first step
+  git clone https://github.com/3st1v3ntOkay/test-zone-nextjs.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```bash
+  # second step
+  corepack enable
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+  corepack use pnpm@latest
+  # or
+  corepack use pnpm@<set-version>
+  # corepack use pnpm@8.x
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Docs to understand what is corepack:
+👉🏻 [Node v20.9.0 - Corepack](https://nodejs.org/dist/latest-v20.x/docs/api/corepack.html)
 
-## Learn More
+Docs to understand how pnpm works:
+👉🏻 [pnpm](https://pnpm.io/motivation)
 
-To learn more about Next.js, take a look at the following resources:
+## Yarn 4.x
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+After some years using yarn I decided to start using npmn after recomemdations, but you can use yarn if you want.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+  # second step
+  corepack enable
 
-## Deploy on Vercel
+  corepack use yarn@latest
+  # or
+  corepack use yarn@<set-version>
+  # corepack use yarn@stable
+  # corepack use yarn@berry
+  # corepack use yarn@classic
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+New docs of yarn:
+👉🏻 [yarn](https://yarnpkg.com/)
