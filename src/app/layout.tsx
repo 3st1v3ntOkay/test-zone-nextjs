@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { ProductSans } from './fonts'
+import { inter } from './fonts'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -13,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={ProductSans.className}>{children}</body>
+      <body className={inter.className}>{children}</body>
     </html>
   )
 }
