@@ -34,4 +34,4 @@ yarn-error.log*
 next-env.d.ts
 
 # Fonts
-/src/fonts/product-sans-*.tff
+/src/fonts/*.ttf
