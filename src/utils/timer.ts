@@ -4,8 +4,6 @@ const timer = 'development mode'
 
 const date = new Date();
 
-const dateFormatUser = new Intl.DateTimeFormat(navigator.language).format(date);
-
 const optionsFormat = {
   weekday: "long",
   month: "long",
@@ -16,8 +14,12 @@ const optionsFormat = {
   second: "numeric",
 };
 
-// const dateFormat = new Intl.DateTimeFormat('nu', optionsFormat).formatToParts(
-//   date
-// );
+const dateFormat = new Intl.DateTimeFormat('nu', optionsFormat).format(
+  date
+);
 
-export { timer, dateFormatUser };
+const dateFormatArray = new Intl.DateTimeFormat('nu', optionsFormat).formatToParts(
+  date
+);
+
+export { timer, dateFormat, dateFormatArray };
