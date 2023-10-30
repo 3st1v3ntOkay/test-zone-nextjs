@@ -1,8 +1,14 @@
-.h1 {
-  font-family: var(--inter);
-  font-weight: 400;
+.title {
+  font-weight: 800;
 }
 
-.important {
-  font-weight: 800;
+.development {
+  font-size: 0.833rem;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.datePublish {
+}
+.author {
 }

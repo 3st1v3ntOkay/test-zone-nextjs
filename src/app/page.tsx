@@ -5,10 +5,12 @@ import { timer, dateFormat } from "@/utils"
 
 export default function Home() {
   return (
-    <>
-      <h1 className={`${style.h1} ${inter.variable}`}>this is a h1</h1>
-      <p className={style.important}>Timer Utils: {timer}</p>
-      <time>{dateFormat}</time>
-    </>
+    <main>
+      <p className={style.development}>Timer Utils: {timer}</p>
+
+      <h1 className={style.title}>Timer.js</h1>
+      <time className={style.datePublish}>{dateFormat}</time>
+      <p className={style.author}>develop by esteban</p>
+    </main>
   )
 }
