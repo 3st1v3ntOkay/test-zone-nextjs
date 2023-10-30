@@ -1,3 +1,5 @@
+//? TODO: Dejar la hora estatica
+
 interface DateTimeOptions {
   weekday?: "long" | "short" | "narrow"
   era?: "long" | "short" | "narrow"
