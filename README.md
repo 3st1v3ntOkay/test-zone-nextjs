@@ -43,3 +43,9 @@ After some years using yarn I decided to start using pnpm after recommendations,
 
 New docs of yarn:
 👉🏻 [yarn](https://yarnpkg.com/)
+
+## My Next.js Notion
+
+Here I left you a Notion file where you can see my progress throught Next.js 13 (now 14 🫠):
+
+👉🏻 [My Nextjs Notion](https://heyys.notion.site/Nextjs-0d73956634bb443b9454b27aca9a0b65)
