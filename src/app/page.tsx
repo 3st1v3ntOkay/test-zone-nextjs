@@ -1,10 +1,12 @@
 import style from './page.module.css'
-
-import { inter } from './fonts'
+import Google from '@/components/google'
 import { timer, dateFormat } from "@/utils"
-import Google from '../components/google'
+import Link from 'next/link'
+import { wait } from '@/utils'
 
-export default function Home() {
+export default async function Home() {
+  await wait()
+
   return (
     <main>
       <p className={style.development}>Timer Utils: {timer}</p>
@@ -14,6 +16,8 @@ export default function Home() {
       <p className={style.author}>develop by esteban</p>
 
       <Google />
+
+      <Link href='/dashboard'>Go to dashboard page</Link>
     </main>
   )
 }
