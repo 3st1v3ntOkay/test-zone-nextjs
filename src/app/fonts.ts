@@ -7,21 +7,10 @@ const inter = Inter({
   variable: '--inter'
 });
 
-const ProductSans = localFont({
-  src: [
-    {
-      path: '../fonts/product-sans-regular.ttf',
-      weight: '400',
-      style: 'regular',
-    },
-    {
-      path: '../fonts/product-sans-bold.ttf',
-      weight: '800',
-      style: 'bold'
-    },
-  ],
-  display: 'swap',
-  variable: '--product-sans'
-})
+// const ProductSans = localFont({
+//   src: [ ],
+//   display: 'swap',
+//   variable: '--product-sans'
+// })
 
-export { inter, ProductSans };
+export { inter };
