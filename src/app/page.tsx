@@ -6,7 +6,7 @@ import { Suspense } from 'react'
 import {Loading, LoadingComponent} from '@/components'
 
 export default async function Home() {
-  // await wait(3000)
+  await wait(1000)
 
   return (
     <main>
