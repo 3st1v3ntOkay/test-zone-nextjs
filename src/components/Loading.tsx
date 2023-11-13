@@ -1,10 +1,34 @@
-import { Skeleton, SkeletonItem } from "@fluentui/react-components";
-import type { SkeletonProps } from "@fluentui/react-components";
-
-export const Loading = (props: Partial<SkeletonProps>) => {
+export const Loading = () => {
+  const skeletonBar = {
+    small: {
+      backgroundColor: "#edede9",
+      color: "#edede9",
+      width: "150px",
+      height: "auto",
+      borderRadius: "4px"
+    },
+    default: {
+      backgroundColor: "#edede9",
+      color: "#edede9",
+      width: "250px",
+      height: "auto",
+      borderRadius: "4px"
+    },
+    medium: {
+      backgroundColor: "#edede9",
+      color: "#edede9",
+      width: "350px",
+      height: "auto",
+      borderRadius: "4px"
+    }
+  }
+  
   return (
-    <Skeleton {...props}>
-    <SkeletonItem />
-  </Skeleton>
+    <section>
+       <h2 style={skeletonBar.small}>title</h2>
+       <p style={skeletonBar.medium}>text</p>
+       <p style={skeletonBar.medium}>text</p>
+       <p style={skeletonBar.medium}>text</p>
+    </section>
   )
 }
