@@ -21,3 +21,7 @@ Here you can find all what I'm learn nowadays.
 - [robots.txt](https://nextjs.org/docs/app/api-reference/file-conventions/metadata/robots) 🤓💡
 
 - [sitemap.xml](https://nextjs.org/docs/app/api-reference/file-conventions/metadata/sitemap) 🤓💡
+
+### Errors I had during development
+
+- [Fast Refresh had to perform full reload](https://nextjs.org/docs/messages/fast-refresh-reload)

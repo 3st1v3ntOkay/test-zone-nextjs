@@ -1,3 +1,5 @@
+'use client'
+
 import style from './page.module.css'
 import { timer, dateFormat } from "@/utils"
 import Link from 'next/link'
@@ -12,15 +14,18 @@ export default async function Home() {
     <main>
       <p className={style.development}>Timer Utils: {timer}</p>
 
-      <h1 className={style.title}>Timer.js</h1>
+      {/* <h1 className={style.title}>Timer.js</h1>
       <time className={style.datePublish}>{dateFormat}</time>
-      <p className={style.author}>develop by esteban</p>
+      <p className={style.author}>develop by esteban</p> */}
 
       <Suspense fallback={<Loading/>}>
         <LoadingComponent />
       </Suspense>
 
       <Link href='/dashboard'>Go to dashboard page</Link>
+
+        <input type="search" value={search} onChange={handleChange} />
+        <button type='button' onClick={handleClick}>Buscar</button>
     </main>
   )
 }
