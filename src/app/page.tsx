@@ -1,11 +1,12 @@
 import style from './page.module.css'
-import Google from '@/components/google'
 import { timer, dateFormat } from "@/utils"
 import Link from 'next/link'
 import { wait } from '@/utils'
+import { Suspense } from 'react'
+import {Loading, LoadingComponent} from '@/components'
 
 export default async function Home() {
-  await wait()
+  // await wait(3000)
 
   return (
     <main>
@@ -15,7 +16,9 @@ export default async function Home() {
       <time className={style.datePublish}>{dateFormat}</time>
       <p className={style.author}>develop by esteban</p>
 
-      <Google />
+      <Suspense fallback={<Loading/>}>
+        <LoadingComponent />
+      </Suspense>
 
       <Link href='/dashboard'>Go to dashboard page</Link>
     </main>
