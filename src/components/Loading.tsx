@@ -1,8 +1,10 @@
-export const Loading = () => {
+import { Skeleton, SkeletonItem } from "@fluentui/react-components";
+import type { SkeletonProps } from "@fluentui/react-components";
+
+export const Loading = (props: Partial<SkeletonProps>) => {
   return (
-    <section>
-       <h2>loading title ...</h2>
-       <p>loading text ...</p>
-    </section>
+    <Skeleton {...props}>
+    <SkeletonItem />
+  </Skeleton>
   )
 }
